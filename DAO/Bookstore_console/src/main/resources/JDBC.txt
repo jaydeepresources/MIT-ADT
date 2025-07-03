@@ -1,0 +1,26 @@
+H2 Steps:-
+
+1. Run H2:-
+	java -jar <fullname-h2-file>.jar
+
+2. Login to H2 Console:-
+	No Password, set the db path correctly.
+
+3.Books Table Creation:-
+
+CREATE TABLE BOOKS(ID INT PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL, PRICE DECFLOAT NOT NULL);
+
+4. Add the dependency in maven under <dependencies> and refresh maven
+<dependency>
+    <groupId>com.h2database</groupId>
+    <artifactId>h2</artifactId>
+    <version>2.3.232</version>
+</dependency>
+
+5. Load Driver
+	org.h2.Driver
+
+6. Establish Connection
+	jdbc:h2:file:/Users/administrator/Desktop/h2
+	user: “sa”
+	password: “”
